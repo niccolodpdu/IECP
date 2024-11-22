@@ -11,11 +11,10 @@
 
 #' Sample Proportion Matrix
 #'
-#' The cell type specific expression profiles are extracted from GSE73721, an expression profiling on RNA-Seq of human brain cells
-#' . Five cell types were extracted from the original data: HepaCAM positive cells (Astrocyte), GalC positive cells 
-#' (Oligodendrocyte), CD45 positive cells (Myeloid), BSL bound cells (Endothelial), and O4 positive cells (Oligodendrocyte), all 
-#' from adult temporal lobe. Here we provided an pre-processed example cell-type specific expression profile for users to use as a
-#' reference.
+#' The cell type specific expression profiles are extracted from GSE73721, an expression profiling on RNA-Seq of human brain cells.
+#' Five cell types were extracted from the original data: HepaCAM positive cells (Astrocyte), GalC positive cells (Oligodendrocyte),
+#'  CD45 positive cells (Myeloid), BSL bound cells (Endothelial), and O4 positive cells (Oligodendrocyte), all from adult temporal 
+#' lobe. Here we provided an pre-processed example cell-type specific expression profile for users to use as a reference.
 #'
 #' @format ## `sample_proportion_matrix`
 #' A data frame with 5 rows and 15,041 columns:
