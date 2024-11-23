@@ -3,7 +3,7 @@
 \docType{data}
 \name{sample_proportion_matrix}
 \alias{sample_proportion_matrix}
-\title{Sample Proportion Matrix}
+\title{Sample_Proportion_Matrix}
 \format{
 \subsection{\code{sample_proportion_matrix}}{
 

@@ -1,4 +1,4 @@
-#' Sample Expression Profile
+#' Sample_Expression_Profile
 #'
 #' The sample-wise cell-type proportion matrix is simulated by the Dirichlet distribution function. We set α (the parameter 
 #' controlling the shape of the distribution) at 3 for all cell types in our simulation to make sure the proportions among samples
@@ -9,7 +9,7 @@
 #' A data frame with 30 rows and 5 columns:
 "sample_expression_profile"
 
-#' Sample Proportion Matrix
+#' Sample_Proportion_Matrix
 #'
 #' The cell type specific expression profiles are extracted from GSE73721, an expression profiling on RNA-Seq of human brain cells.
 #' Five cell types were extracted from the original data: HepaCAM positive cells (Astrocyte), GalC positive cells (Oligodendrocyte),

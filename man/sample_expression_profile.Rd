@@ -3,7 +3,7 @@
 \docType{data}
 \name{sample_expression_profile}
 \alias{sample_expression_profile}
-\title{Sample Expression Profile}
+\title{Sample_Expression_Profile}
 \format{
 \subsection{\code{sample_expression_profile}}{
 
