@@ -3,20 +3,14 @@
 \docType{data}
 \name{sample_proportion_matrix}
 \alias{sample_proportion_matrix}
-\title{Sample_Proportion_Matrix}
+\title{Sample Proportion Matrix}
 \format{
-\subsection{\code{sample_proportion_matrix}}{
-
-A data frame with 5 rows and 15,041 columns:
-}
+A data frame with 5 rows and 15,041 columns
 }
 \usage{
 sample_proportion_matrix
 }
 \description{
-The cell type specific expression profiles are extracted from GSE73721, an expression profiling on RNA-Seq of human brain cells.
-Five cell types were extracted from the original data: HepaCAM positive cells (Astrocyte), GalC positive cells (Oligodendrocyte),
-CD45 positive cells (Myeloid), BSL bound cells (Endothelial), and O4 positive cells (Oligodendrocyte), all from adult temporal
-lobe. Here we provided an pre-processed example cell-type specific expression profile for users to use as a reference.
+The cell type specific expression profiles are extracted from GSE73721, an expression profiling on RNA-Seq of human brain cells. Five cell types were extracted from the original data: HepaCAM positive cells (Astrocyte), GalC positive cells (Oligodendrocyte), CD45 positive cells (Myeloid), BSL bound cells (Endothelial), and O4 positive cells (Oligodendrocyte), all from adult temporal lobe. Here we provided an pre-processed example cell-type specific expression profile for users to use as a reference.
 }
 \keyword{datasets}
