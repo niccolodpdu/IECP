@@ -2,7 +2,7 @@
 % Please edit documentation in R/scatter_plot.R
 \name{scatter_plot}
 \alias{scatter_plot}
-\title{A function for illustrating data points in scatter plot with optional marker color-coding}
+\title{scatter_plot}
 \usage{
 scatter_plot(
   data,

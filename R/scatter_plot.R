@@ -1,5 +1,5 @@
-#' @name scatter_plot
-#' @title A function for illustrating data points in scatter plot with optional marker color-coding
+#' @title scatter_plot
+#' @description A function for illustrating data points in scatter plot with optional marker color-coding
 #' @param data With samples on the columns and features on the rows.
 #' @param mg.info Do you have the info for marker genes?
 #' @param mg A list of marker genes

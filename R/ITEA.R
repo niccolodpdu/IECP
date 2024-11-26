@@ -29,8 +29,6 @@
 #' @param S_deconvo Optional. The address of S matrix (source matrix) from the deconvolution output. If not provided, ITEA
 #' will use NNLS to retrieve the source matrix S from the input matrix X and the proportion matrix A
 #' 
-#' @examples test_result<-ITEA(X=X_TC,K=K,deconvo_func = PREDE,deconvo_param = list(Y=X_TC,W1=NULL,type = "GE",K=K,iters = 50,rssDiffStop=1e-5),feat_sele_func = select_feature,feat_sele_param = list(mat = X_TC,method = "cv",nmarker = 1000,startn = 0),A_deconvo = '$H')
-#' 
 #' @returns A list of 1. A matrix (mixing proportion matrix) from each iteration of ITEA 2. S matrix (source matrix) from each
 #' iteration of ITEA 3. The index of the optimal output from the iterative search, based on the minimum reconstruction error 
 #' 4. The index of the optimal output from the iterative search, based on the maximum number of iCEGs found in X and S
