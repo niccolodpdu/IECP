@@ -67,10 +67,6 @@ To address this, we proposed ITEA which aims to enhance the accuracy of proporti
 cell-type asymmetry. ITEA iteratively identifies Consistently Expressed Genes (CEGs) across the cell-type expression
 profiles in S after each round of deconvolution and uses these CEGs to normalize the bulk expression matrix X.
 }
-\examples{
-test_result<-ITEA(X=X_TC,K=K,deconvo_func = PREDE,deconvo_param = list(Y=X_TC,W1=NULL,type = "GE",K=K,iters = 50,rssDiffStop=1e-5),feat_sele_func = select_feature,feat_sele_param = list(mat = X_TC,method = "cv",nmarker = 1000,startn = 0),A_deconvo = '$H')
-
-}
 \author{
 Dongping Du
 }
