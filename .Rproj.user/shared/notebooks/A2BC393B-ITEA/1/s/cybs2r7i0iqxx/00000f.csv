@@ -1,5 +1,0 @@
-"0","cot<-cotMG(Sest=S,cos.thres=0.5,top=1500)
-"
-"2","Error in cotMG(Sest = S, cos.thres = 0.5, top = 1500) : 
-  could not find function ""cotMG""
-"
