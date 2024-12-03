@@ -20,7 +20,7 @@ ITEA(
 )
 }
 \arguments{
-\item{X}{Input matrix, with samples on columns and features on rows (thin and tall).}
+\item{X}{Input matrix, with samples on columns and features on rows.}
 
 \item{transpose}{Boolean, default False. Some deconvolution methods require the input to have features on columns; if set
 to True, the input matrix for deconvolution will be transposed before being passed to the function.}
