@@ -9,7 +9,7 @@
 #' @title Iterative equilibration of cell-type asymmetry
 #' @author Dongping Du
 #' @description Main function of ITEA
-#' @param X Input matrix, with samples on columns and features on rows (thin and tall).
+#' @param X Input matrix, with samples on columns and features on rows.
 #' @param transpose Boolean, default False. Some deconvolution methods require the input to have features on columns; if set 
 #' to True, the input matrix for deconvolution will be transposed before being passed to the function.
 #' @param K The number of sources/cell types/sub-types
