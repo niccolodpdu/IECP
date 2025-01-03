@@ -1,41 +1,41 @@
-#' ITEA: Iterative equilibration of cell-type asymmetry for enhanced deconvolution
+#' IECP: Iterative Equilibration of Cell type expression Profiles
 #' 
 #' Cell-type asymmetry in expression profiles can substantially impact the outcomes of reference-free deconvolution. 
-#' To address this, we proposed ITEA which aims to enhance the accuracy of proportion inference under the influence of 
-#' cell-type asymmetry. ITEA iteratively identifies Consistently Expressed Genes (CEGs) across the cell-type expression 
+#' To address this, we proposed IECP which aims to enhance the accuracy of proportion inference under the influence of 
+#' cell-type asymmetry. IECP iteratively identifies Consistently Expressed Genes (CEGs) across the cell-type expression 
 #' profiles in S after each round of deconvolution and uses these CEGs to normalize the bulk expression matrix X.
 #' 
-#' @name ITEA
+#' @name IECP
 #' @title Iterative equilibration of cell-type asymmetry
 #' @author Dongping Du
-#' @description Main function of ITEA
+#' @description Main function of IECP
 #' @param X Input matrix, with samples on columns and features on rows.
 #' @param transpose Boolean, default False. Some deconvolution methods require the input to have features on columns; if set 
 #' to True, the input matrix for deconvolution will be transposed before being passed to the function.
 #' @param K The number of sources/cell types/sub-types
 #' @param iCEG_thres Threshold of the cosine similarity of potential iCEGs with the reference vector (1,1...1,1). 
 #' Features with a higher cosine value than the 'iCEG_thres' will be used as iCEGs for normalizing X
-#' @param iteration The number of iteration for ITEA The function will stop once the number of iterations reaches this number
+#' @param iteration The number of iteration for IECP The function will stop once the number of iterations reaches this number
 #' @param removal Optional, number of rounds to be removed. Remove the results of first several rounds from the final output.
-#' @param deconvo_func The deconvolution function used in ITEA.
+#' @param deconvo_func The deconvolution function used in IECP.
 #' @param deconvo_param A list of parameters used in the deconvolution function specified by the user. Please note that the
 #' input matrix should be the first element of the list and its value should be set identical with X.
 #' @param feat_sele_func Optional, a function used for feature selection. If both 'feat_sele_func' and 'feat_sele_param' are
-#' provided, ITEA will commence feature selection prior to deconvolution in each round.
+#' provided, IECP will commence feature selection prior to deconvolution in each round.
 #' @param feat_sele_param Optional, a list of parameters used in the feature selection function. Please note that the input 
 #' matrix should be the first element of the list and its value should be set identical with X.
 #' @param A_deconvo The address of A matrix (mixing proportion matrix) from the deconvolution output. It is used for extracting
 #' A matrix from that output with the help of the 'extract_element' function
-#' @param S_deconvo Optional. The address of S matrix (source matrix) from the deconvolution output. If not provided, ITEA
+#' @param S_deconvo Optional. The address of S matrix (source matrix) from the deconvolution output. If not provided, IECP
 #' will use NNLS to retrieve the source matrix S from the input matrix X and the proportion matrix A
 #' 
-#' @returns A list of 1. A matrix (mixing proportion matrix) from each iteration of ITEA 2. S matrix (source matrix) from each
-#' iteration of ITEA 3. The index of the optimal output from the iterative search, based on the minimum reconstruction error 
+#' @returns A list of 1. A matrix (mixing proportion matrix) from each iteration of IECP 2. S matrix (source matrix) from each
+#' iteration of IECP 3. The index of the optimal output from the iterative search, based on the minimum reconstruction error 
 #' 4. The index of the optimal output from the iterative search, based on the maximum number of iCEGs found in X and S
 #' 
 #' @export
 
-ITEA<-function(X=NULL, transpose=FALSE, K, iCEG_thres=0.98, iteration=20, removal=NULL, deconvo_func=NULL, 
+IECP<-function(X=NULL, transpose=FALSE, K, iCEG_thres=0.98, iteration=20, removal=NULL, deconvo_func=NULL, 
                 deconvo_param=NULL,feat_sele_func=NULL,feat_sele_param=NULL,A_deconvo=NULL, S_deconvo=NULL){
   
   # Scale to (0,1]
