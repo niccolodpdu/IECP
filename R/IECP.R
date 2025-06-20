@@ -163,6 +163,11 @@ IECP<-function(X=NULL, transpose=FALSE, K, iCEG_thres=0.98, iteration=20, remova
       S<-extract_element(result,S_deconvo)
     }
     
+    # Make sure S is slim and tall too, for the purpose of cosine calculation
+    if (dim(S)[1]<dim(S)[2]){
+      S<-t(S)
+    }
+    
     # Calculate the cosine values, get the iCEG index
     cos_S<-cos_iCEG(S)
     index_S_iCEG<-which(cos_S>iCEG_thres)
