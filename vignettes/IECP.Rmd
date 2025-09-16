@@ -75,7 +75,7 @@ The above plot is the gene scatter plot in the cell-type space for cell type spe
 
 ## Applying IECP on four different unsupervised deconvolution algorithms
 
-To validate the applicability of IECP on different unsupervised deconvolution algorithms, we included four popular methods (**CAM3.0**, **TOAST**, **PREDE**, **RefFreeEWAS**). Three of these methods embedded specific feature selection units as a part of their procedure (PREDE, TOAST, RefFreeEWAS), which were also integrated into the IECP pipeline.
+To validate the applicability of IECP on different unsupervised deconvolution algorithms, we firstly applied IECP to our in-house deconvolution method *CAM3.0*
 
 ```{r Library Loading, warning=FALSE,fig.height=7, fig.width=7, fig.align='left',message=FALSE}
 ## Loading necessary libraries
